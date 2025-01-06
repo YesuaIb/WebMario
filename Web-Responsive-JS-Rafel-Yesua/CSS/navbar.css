@@ -1,0 +1,256 @@
+/*Parametros generales de la web*/
+*{
+    margin:0;
+}
+/*Parametros de color y tamaño de la barra de navegación*/
+nav{
+    background-color: red;
+    height: 3.7vw;
+    overflow: hidden;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.2vw 1.2vw;
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+li a:hover {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+}
+.btnIni:hover {
+    background-color: transparent;
+    padding: 1.2vw;
+}
+.btnIni img{
+    height: 1.3vw;
+}
+.btnIniM a{
+    padding: 0.8vw 1.2vw;
+}
+.btnIniM a:hover{
+    background-color: transparent;
+}
+.btnIniM img{
+    width: 2.2vw;
+}
+
+
+.Zelda {
+    background-color: #11342c;
+}
+
+.Zelda a {
+    color: gold;
+}
+
+.Zelda a:hover{
+    color: white;
+    background-color: #18473d;
+}
+
+.btnIniZ{
+    padding: 1vw;
+    background-color: #11342c;
+}
+
+.btnIniZ img{
+    width: 3.5vw;
+}
+.btnIniZ:hover{
+    background-color: transparent;
+
+}
+
+/*Barra de navegación móvil oculta*/
+.navmovil,.navmovilZelda{
+    display: none;
+}
+
+
+.nav-pc-right {
+    
+    margin-left: 92vw;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    padding: 1.2vw;
+}
+
+.nav-pc-right button {
+    margin-left: 0.5rem;
+    justify-content: center;
+}
+
+.nav-pc-right button{
+    color: black;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.switch {
+    --circle-dim: 1rem;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.2rem;
+    height: 1.6rem;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f5aeae;
+    transition: .4s;
+    border-radius: 30px;
+
+}
+  
+.slider-card {
+    position: absolute;
+    content: "";
+    height: var(--circle-dim);
+    width: var(--circle-dim);
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transition: .4s;
+    pointer-events: none;
+}
+  
+.slider-card-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    border-radius: 50%;
+    transition: .4s transform;
+}
+  
+.slider-card-front {
+    background-color: #DC3535;
+}
+  
+.slider-card-back {
+    background-color: #379237;
+    transform: rotateY(180deg);
+}
+  
+input:checked ~ .slider-card .slider-card-back {
+    transform: rotateY(0);
+}
+  
+input:checked ~ .slider-card .slider-card-front {
+    transform: rotateY(-180deg);
+}
+  
+input:checked ~ .slider-card {
+    transform: translateX(1.5em);
+}
+  
+input:checked ~ .slider {
+    background-color: #9ed99c;
+}
+
+
+#navM{
+    display: none;
+}
+
+.switch-movil{
+    display: none;
+}
+
+/*CSS Tamaño móvil*/
+@media screen and (max-width: 426px) {
+    #nav2{
+        display: none;
+    }
+   /*Parámetros generales de la web*/
+   *{
+    margin:0;
+}
+nav{
+    height: 6vh;
+}
+/*Parámetros de la navbar*/
+#navM{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+}
+/*Boton de navegación oculto*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4vw 2vw;
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+}
+li a:hover {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+}
+.btnIni:hover {
+    background-color: transparent;
+    padding: 1.5vw;
+}
+.btnIni img{
+    height: 5vw;
+}
+.btnIniM a{
+    padding: 0.8vw 1.2vw;
+}
+.btnIniM a:hover{
+    background-color: transparent;
+}
+.btnIniM img{
+    width:5vh;
+}
+.btnIniZ img{
+    padding: 2vw;
+    width:5vh;
+}
+
+}

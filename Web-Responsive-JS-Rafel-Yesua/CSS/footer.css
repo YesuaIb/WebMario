@@ -1,0 +1,45 @@
+/*Pie de página*/
+footer{
+    position: absolute;
+    display: flexbox;
+    background-color: red;
+    color: white;
+    font-size: 1vw;
+    text-align: left;
+    width: 95.99%;
+    padding: 2vw;
+}
+/*Parámetros del footer de la web de zelda, tamaño color etc.*/
+.footer_Zelda{
+    position: absolute;
+    display: flexbox;
+    background-color: #18473d;
+    color: white;
+    font-size: 1vw;
+    text-align: left;
+    width: 95.99%;
+    padding: 2vw;
+
+}
+/*Iconos de las redes sociales*/
+.social{
+    width: 2vw;
+    height: 2vw;
+}
+@media screen and (max-width: 428px){
+    /*Modificacion del footer en todas las Web*/
+.footer_Zelda{
+        font-size: 4vw;
+        margin-top: 10vw;
+        height: 20vh;
+    }
+    footer{
+        font-size: 4vw;
+
+    }
+    /*Modificacion del los iconos del foooter*/
+    .social{
+        width: 9vw;
+        height: 9vw;
+    }
+}

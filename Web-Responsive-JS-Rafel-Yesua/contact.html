@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/login.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <header>
+            <!--Barra de navegación del tamaño pc-->
+                <nav>
+                    <div id="nav2">
+                    <ul >
+                        <li><a class="btnIni" href="index.html"><img src="Multimedia/Logo.png"></a></li>
+                        <li class="nv1"><a href="Mario.html">Mario Bros</a></li>
+                        <li class="nv1"><a href="Zelda.html">Zelda Tears of the Kingdom</a></li>
+                         <li class="nv1"><a href="contact.html">Contacto</a></li>
+                        <div class="nav-pc-right">
+                            <label class="switch">
+                            <input type="checkbox">
+                            <div class="slider"></div>
+                            <div class="slider-card">
+                            <div class="slider-card-face slider-card-front"></div>
+                            <div class="slider-card-face slider-card-back"></div>
+                            </div>
+                            </label>
+                        </div>
+                    </ul>
+                </div>
+
+            <!--Barra de navegación para movil-->
+            <div id="navM">
+                <ul>
+                    <li><a class="btnIni" href="index.html"><img src="Multimedia/Logo.png"></a></li>
+                    <li class="nv1"><a href="Mario.html">Mario Bros</a></li>
+                    <li class="nv1"><a href="Zelda.html">Zelda Tears of the Kingdom</a></li>
+                    <li class="nv1"><a href="contact.html">Contacto</a></li>
+                    
+                </ul>
+                </div>
+
+            </nav>
+            <label class="switch-movil">
+                <input type="checkbox">
+                <div class="slider" id="slider-movil"></div>
+                <div class="slider-card">
+                <div class="slider-card-face slider-card-front"></div>
+                <div class="slider-card-face slider-card-back"></div>
+              </label>
+        </header>
+        <div class="container-login" style="background-image: url(./Multimedia/FondoLogin.jpg);">
+            <div class="login">
+            <form class="formulario" action="" onsubmit="return verificador()">
+                <div class="form-group">
+                <div class="form-flex">
+                    <label for="nome">Nombre/Apodo</label>
+                    <span class="error-message"></span>
+                </div>
+                <input type="text" class="infos" id="nome" name="nome" required>
+                </div>
+                <div class="mario"></div>
+                <div class="form-group">
+                <div class="form-flex">
+                    <label for="email">Email</label>
+                    <span class="error-message"></span>
+                </div>
+                <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                <label for="numero">Número de teléfono</label>
+                <input type="number" id="numero" name="numero" pattern="[0-9]" size="9" required>
+                </div>
+        
+                <div class="form-group">
+                <div class="form-flex">
+                    <label for="coment">Motivo de contacto</label>
+                    <span class="error-message"></span>
+                </div>
+                <textarea id="comentario" name="Comentario" rows="6" cols="126" required></textarea>
+                </div>
+                <div class="buttons">
+                <button class="button-enviar" type="submit">Enviar</button>
+                <button class="button-borrar" type="reset" id="limpar">Borrar</button>
+                </div>
+            </form>
+            
+            </div>
+            
+        </div>
+        
+        <footer>
+            <!--Contenido de los creadores-->
+            <p><br> Creada por Yesua Ibañez Castrillo | Rafel Amengual Tomás </p>
+            <br>
+            
+            <!--Contenido de redes sociales-->
+            <div>
+                <div class="iconos-sociales">
+                    <a href="https://www.youtube.com/channel/UC7jT5YnTBAOf2JTRrCR0K6g" target="_blank"><img class="social" alt="Síguenos en YouTube" src="Multimedia/youtube.png" title=" Síguenos en YouTube "/></a>
+                    
+                    <a href="https://www.facebook.com/NintendoES/" target="_blank"><img class="social" alt="Síguenos en Facebook" src="Multimedia/facebook.png" title="Síguenos en Facebook"/></a>
+                    
+                    <a href="https://www.instagram.com/nintendoes/" target="_blank"><img class="social" alt="Síguenos en Instagram" src="Multimedia/Instagram.png" title="Síguenos en Instagram"/></a>
+                    
+                    <a href="https://www.tiktok.com/discover/nintendo-espa%C3%B1a" target="_blank"><img class="social" alt="Síguenos en TikTok" src="Multimedia/tiktok.png" title="Síguenos en TikTok"/></a>
+                    
+                    <a href="https://twitter.com/nintendoes?lang=ca" target="_blank"><img class="social" alt="Síguenos en Twitter" src="Multimedia/Twitter.png" title="Sígueme en Twitter"/></a>
+                </div>
+        
+                <p><br>© Nintendo España 2023</p>
+            </div>
+        </footer>
+</body>
+<script src="scripts/cambio-form.js"></script>
+<script src="scripts/verificador.js"></script>
+</html>
